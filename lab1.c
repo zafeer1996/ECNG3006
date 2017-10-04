@@ -19,6 +19,5 @@ void main (void)
         counter = counter + 1;
         
     }
-    /*Testing Git...is it working?*/
-        
+    
 }
