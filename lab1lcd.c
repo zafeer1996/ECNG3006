@@ -55,22 +55,13 @@ void main (void)
     init_XLCD();
     TRISB = 0;
     PORTB = 0;
-    counter = 0;
-    
+  
    
     /*Changes*/
     while( BusyXLCD() );
-    SetDDRamAddr(0x02);
-    putrsXLCD( "Advent ZEJAK");
+    SetDDRamAddr(0x43);
+    putrsXLCD( "Hello world!");
     while(1)
-    {
-        while (counter < 16)
-        {
-        PORTB = counter;
-        counter = counter + 1; 
-        Delay1KTCYx(255);
-        if (counter == 16) counter=0;
-        }
-    }
+    {}
        
 }
