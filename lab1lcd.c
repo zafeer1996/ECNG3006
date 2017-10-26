@@ -53,9 +53,7 @@ void main (void)
 {
     
     init_XLCD();
-    TRISB = 0;
-    PORTB = 0;
-  
+ 
    
     /*Changes*/
     while( BusyXLCD() );
